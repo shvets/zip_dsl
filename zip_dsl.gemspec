@@ -3,7 +3,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/lib/zip_dsl/version')
 
 Gem::Specification.new do |spec|
-  spec.name          = "zip_dsl"
+  spec.name          = "meta_methods"
   spec.summary       = %q{Library for working with zip file in DSL-way }
   spec.description   = %q{Library for working with zip file in DSL-way }
   spec.email         = "alexander.shvets@gmail.com"
@@ -17,6 +17,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.version       = ZipDSL::VERSION
 
-  <%= include_dependencies %>
+  spec.add_runtime_dependency "meta_methods", [">= 0"]
+  spec.add_development_dependency "gemspec_deps_gen", [">= 0"]
+  spec.add_development_dependency "gemcutter", [">= 0"]
+  
 end
 
