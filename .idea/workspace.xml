@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/zip_dsl.iml" afterPath="$PROJECT_DIR$/.idea/zip_dsl.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/directory_builder.rb" afterPath="$PROJECT_DIR$/lib/directory_builder.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/directory_builder_spec.rb" afterPath="$PROJECT_DIR$/spec/directory_builder_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/zip_builder_spec.rb" afterPath="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zip_dsl.gemspec" afterPath="$PROJECT_DIR$/zip_dsl.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/version.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
     </list>
     <ignored path="zip_dsl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="directory_builder_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="directory_builder_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/directory_builder_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="54" selection-start="2099" selection-end="2099" vertical-scroll-proportion="1.9967585">
+            <state line="77" column="54" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="18" selection-start="32" selection-end="32" vertical-scroll-proportion="0.01713062">
               <folding />
             </state>
           </provider>
@@ -69,12 +71,12 @@
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
         <option value="$PROJECT_DIR$/zip_dsl.gemspec" />
         <option value="$PROJECT_DIR$/zip_dsl.gemspec.erb" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
         <option value="$PROJECT_DIR$/lib/directory_builder.rb" />
         <option value="$PROJECT_DIR$/spec/directory_builder_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
       </list>
     </option>
   </component>
@@ -154,6 +156,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zip_dsl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zip_dsl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zip_dsl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,14 +446,14 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
     <frame x="332" y="39" width="1588" height="1058" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="jenkinsBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67013526" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67013526" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -536,13 +556,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@zip_dsl/gems/rspec-core-2.9.0/lib/rspec/core/example_group.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="356" column="0" selection-start="12266" selection-end="12266" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@zip_dsl/gems/rspec-core-2.9.0/lib/rspec/core/example.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="0" selection-start="3599" selection-end="3599" vertical-scroll-proportion="3.0254545">
@@ -573,9 +586,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@zip_dsl/gems/rubyzip-0.9.8/lib/zip/zip_entry_set.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.32090762">
-          <folding />
-        </state>
+        <state line="34" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.32090762" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@zip_dsl/gems/rubyzip-0.9.8/lib/zip/zip_output_stream.rb">
@@ -643,7 +654,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/directory_builder_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="54" selection-start="2099" selection-end="2099" vertical-scroll-proportion="1.9967585">
+        <state line="77" column="54" selection-start="2099" selection-end="2099" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="32" selection-end="32" vertical-scroll-proportion="0.01713062">
           <folding />
         </state>
       </provider>
