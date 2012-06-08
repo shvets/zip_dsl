@@ -11,6 +11,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://github.com/shvets/zip_dsl"
 
   spec.files         = `git ls-files`.split($\)
+  #spec.executables   = spec.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  #gemspec.bindir = "bin"
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
   spec.version       = ZipDSL::VERSION

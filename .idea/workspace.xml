@@ -4,7 +4,7 @@
     <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/version.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zip_dsl.gemspec.erb" afterPath="$PROJECT_DIR$/zip_dsl.gemspec.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zip_dsl.gemspec" afterPath="$PROJECT_DIR$/zip_dsl.gemspec" />
     </list>
     <ignored path="zip_dsl.iws" />
@@ -39,16 +39,16 @@
       <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="23" selection-start="38" selection-end="38" vertical-scroll-proportion="0.07779579">
+            <state line="1" column="18" selection-start="32" selection-end="32" vertical-scroll-proportion="0.01713062">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zip_dsl.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
+      <file leaf-file-name="zip_dsl.gemspec.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="32" selection-start="125" selection-end="142" vertical-scroll-proportion="0.0">
+            <state line="13" column="18" selection-start="535" selection-end="535" vertical-scroll-proportion="-8.32">
               <folding />
             </state>
           </provider>
@@ -58,6 +58,15 @@
         <entry file="file://$PROJECT_DIR$/spec/directory_builder_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="27" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zip_dsl.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="32" selection-start="125" selection-end="142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,7 +87,6 @@
       <list>
         <option value="$PROJECT_DIR$/.rvmrc" />
         <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/zip_dsl.gemspec.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/zip_dsl.rb" />
         <option value="$PROJECT_DIR$/lib/directory_builder.rb" />
@@ -87,6 +95,7 @@
         <option value="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
         <option value="$PROJECT_DIR$/zip_dsl.gemspec" />
+        <option value="$PROJECT_DIR$/zip_dsl.gemspec.erb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
       </list>
     </option>
@@ -423,7 +432,6 @@
     <frame x="332" y="39" width="1588" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -433,12 +441,13 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -502,51 +511,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.rvmrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="21" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="137" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="40" selection-start="557" selection-end="557" vertical-scroll-proportion="0.35135135">
-          <folding />
-        </state>
+        <state line="16" column="137" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="136" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07779579">
-          <folding />
-        </state>
+        <state line="3" column="136" selection-start="84" selection-end="84" vertical-scroll-proportion="0.07779579" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/directory_builder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="41" selection-start="321" selection-end="321" vertical-scroll-proportion="0.32090762">
-          <folding />
-        </state>
+        <state line="16" column="41" selection-start="321" selection-end="321" vertical-scroll-proportion="0.32090762" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/directory_builder_spec.rb">
@@ -558,30 +548,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="29" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/zip_builder_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="70" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.76661265">
-          <folding />
-        </state>
+        <state line="73" column="70" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.76661265" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
@@ -593,7 +575,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33711508">
+        <state line="13" column="27" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33711508" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="535" selection-end="535" vertical-scroll-proportion="-8.32">
           <folding />
         </state>
       </provider>
@@ -607,7 +594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="23" selection-start="38" selection-end="38" vertical-scroll-proportion="0.07779579">
+        <state line="1" column="18" selection-start="32" selection-end="32" vertical-scroll-proportion="0.01713062">
           <folding />
         </state>
       </provider>
