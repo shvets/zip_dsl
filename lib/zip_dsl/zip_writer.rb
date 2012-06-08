@@ -15,9 +15,8 @@ class Zip::Writer
 
   def file params
     to_dir = params[:to_dir].nil? ? File.dirname(params[:name]) : strip_dot(params[:to_dir])
-    name = (File.expand_path(params[:name]) == params[:name]) ? params[:name] : "#@basedir/#{params[:name]}"
 
-    add_file name, to_dir
+    add_file full_name(params[:name]), to_dir
   end
 
   def content params
@@ -52,7 +51,7 @@ class Zip::Writer
     patterns = filter.kind_of?(String) ? [filter] : filter
 
     patterns.each do |pattern|
-      files = pattern_to_files "#@basedir/#{from_dir}", pattern
+      files = pattern_to_files full_name(from_dir), pattern
 
       files.each do |file_name|
         suffix = File.dirname(file_name)["#@basedir/#{from_dir}".size+1..-1]
@@ -96,6 +95,14 @@ class Zip::Writer
     end
 
     name
+  end
+
+  def full_name? name
+    File.expand_path(name) == name
+  end
+
+  def full_name name
+    full_name?(name) ? name : "#@basedir/#{name}"
   end
 
 end

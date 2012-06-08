@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/version.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zip_dsl.gemspec" afterPath="$PROJECT_DIR$/zip_dsl.gemspec" />
     </list>
     <ignored path="zip_dsl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +30,7 @@
       <file leaf-file-name="zip_writer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="25" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+            <state line="7" column="16" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -36,7 +39,7 @@
       <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="32" selection-end="32" vertical-scroll-proportion="0.025931928">
+            <state line="3" column="23" selection-start="38" selection-end="38" vertical-scroll-proportion="0.07779579">
               <folding />
             </state>
           </provider>
@@ -83,6 +86,7 @@
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
         <option value="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
+        <option value="$PROJECT_DIR$/zip_dsl.gemspec" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
       </list>
     </option>
@@ -496,13 +500,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="40" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.rvmrc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="21" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
@@ -594,16 +591,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="27" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33711508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+        <state line="7" column="16" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="32" selection-end="32" vertical-scroll-proportion="0.025931928">
+        <state line="3" column="23" selection-start="38" selection-end="38" vertical-scroll-proportion="0.07779579">
           <folding />
         </state>
       </provider>
