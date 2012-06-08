@@ -1,18 +1,17 @@
-require 'zip_writer'
-require 'zip_reader'
 require 'meta_methods'
 
 class Zip::DSL
   include MetaMethods
 
-  def initialize name
+  def initialize name, basedir
     @name = name
+    @basedir = File.expand_path(basedir)
   end
 
   def build(name=nil, &execute_block)
     name = name.nil? ? @name : name
 
-    create_block = lambda { Zip::Writer.new(name) }
+    create_block = lambda { Zip::Writer.new(name, @basedir) }
     destroy_block = lambda {|writer| writer.close }
 
     evaluate_dsl(create_block, destroy_block, execute_block)

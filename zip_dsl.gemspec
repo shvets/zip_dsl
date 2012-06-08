@@ -3,7 +3,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/lib/zip_dsl/version')
 
 Gem::Specification.new do |spec|
-  spec.name          = "meta_methods"
+  spec.name          = "zip_dsl"
   spec.summary       = %q{Library for working with zip file in DSL-way }
   spec.description   = %q{Library for working with zip file in DSL-way }
   spec.email         = "alexander.shvets@gmail.com"

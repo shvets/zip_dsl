@@ -14,7 +14,7 @@ class DirectoryBuilder
 
     name = name.nil? ? @name : name
 
-    evaluate_dsl(self, nil, execute_block, name)
+    evaluate_dsl(self, nil, execute_block)
   end
 
   def entry_exist? entry_name

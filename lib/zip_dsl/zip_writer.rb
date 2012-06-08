@@ -2,8 +2,9 @@ require 'zip/zip'
 
 class Zip::Writer
 
-  def initialize file_name
+  def initialize file_name, basedir
     @zos = Zip::ZipOutputStream.new(file_name)
+    @basedir = basedir
 
     @compression_level = Zlib::BEST_COMPRESSION
   end
@@ -15,7 +16,7 @@ class Zip::Writer
   def file params
     to_dir = params[:to_dir].nil? ? File.dirname(params[:name]) : strip_dot(params[:to_dir])
 
-    add_file params[:name], to_dir
+    add_file "#@basedir/#{params[:name]}", to_dir
   end
 
   def content params
@@ -50,10 +51,10 @@ class Zip::Writer
     patterns = filter.kind_of?(String) ? [filter] : filter
 
     patterns.each do |pattern|
-      files = pattern_to_files from_dir, pattern
+      files = pattern_to_files "#@basedir/#{from_dir}", pattern
 
       files.each do |file_name|
-        suffix = File.dirname(file_name)[from_dir.size+1..-1]
+        suffix = File.dirname(file_name)["#@basedir/#{from_dir}".size+1..-1]
         dir = suffix.nil? ? to_dir : "#{to_dir}/#{suffix}"
 
         if File.file?(file_name)
