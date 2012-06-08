@@ -15,8 +15,9 @@ class Zip::Writer
 
   def file params
     to_dir = params[:to_dir].nil? ? File.dirname(params[:name]) : strip_dot(params[:to_dir])
+    name = (File.expand_path(params[:name]) == params[:name]) ? params[:name] : "#@basedir/#{params[:name]}"
 
-    add_file "#@basedir/#{params[:name]}", to_dir
+    add_file name, to_dir
   end
 
   def content params
