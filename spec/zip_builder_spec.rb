@@ -58,7 +58,7 @@ describe Zip::DSL do
     subject.entries_size.should > 1
   end
 
-  it "should display files in specified directory" do
+  it "should display files in current directory" do
     subject.build do
       directory :from_dir => "spec"
     end

@@ -16,6 +16,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.9.0, RVM: ruby-1.9.3-p194 [zip_dsl]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.9.1, RVM: ruby-1.9.3-p194 [zip_dsl]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.9.0, RVM: ruby-1.9.3-p194 [zip_dsl]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="zip (v2.0.2, RVM: ruby-1.9.3-p194 [zip_dsl]) [gem]" level="application" />
   </component>
 </module>
 
