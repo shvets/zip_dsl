@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 require 'zip_dsl'
 
 describe Zip::DSL do
-  let(:basedir) { File.expand_path("..") }
+  let(:basedir) { "#{File.dirname(__FILE__)}/.." }
 
   subject { Zip::DSL.new "../test.zip", basedir }
 

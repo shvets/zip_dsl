@@ -2,8 +2,8 @@ source :rubygems
 
 group :default do
   gem "meta_methods"
-  #gem "zip"
-  gem "rubyzip", "0.9.8"
+  gem "zip"
+  #gem "rubyzip", "0.9.8"
   gem "file_utils"
 end
 

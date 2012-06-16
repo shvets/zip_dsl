@@ -6,10 +6,10 @@ require 'file_utils/file_utils'
 describe DirectoryBuilder do
   include FileUtils
 
-  let(:basedir) { File.expand_path("..") }
-  subject { DirectoryBuilder.new("build/test", "..") }
+  let(:basedir) { "#{File.dirname(__FILE__)}/.." }
+  subject { DirectoryBuilder.new("build/test", basedir) }
 
-  before do
+  after do
     delete_directory "#{basedir}/build"
   end
 
