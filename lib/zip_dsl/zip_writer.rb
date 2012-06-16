@@ -54,7 +54,7 @@ class Zip::Writer
       files = pattern_to_files full_name(from_dir), pattern
 
       files.each do |file_name|
-        suffix = File.dirname(file_name)["#@basedir/#{from_dir}".size+1..-1]
+        suffix = File.dirname(file_name)[full_name(from_dir).size+1..-1]
         dir = suffix.nil? ? to_dir : "#{to_dir}/#{suffix}"
 
         if File.file?(file_name)
