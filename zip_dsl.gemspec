@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.version       = ZipDSL::VERSION
 
   spec.add_runtime_dependency "meta_methods", [">= 0"]
-  spec.add_runtime_dependency "rubyzip", ["= 0.9.8"]
+  spec.add_runtime_dependency "zip", [">= 0"]
   spec.add_runtime_dependency "file_utils", [">= 0"]
   spec.add_development_dependency "gemspec_deps_gen", [">= 0"]
   spec.add_development_dependency "gemcutter", [">= 0"]
