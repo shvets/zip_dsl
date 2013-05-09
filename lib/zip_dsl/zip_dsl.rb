@@ -1,6 +1,6 @@
 require 'meta_methods'
 
-class Zip::DSL
+class ZipDSL
   include MetaMethods
 
   def initialize name, basedir
@@ -11,14 +11,14 @@ class Zip::DSL
   def build(name=nil, &execute_block)
     name = name.nil? ? @name : name
 
-    create_block = lambda { Zip::Writer.new(name, @basedir) }
+    create_block = lambda { ZipWriter.new(name, @basedir) }
     destroy_block = lambda {|writer| writer.close }
 
     evaluate_dsl(create_block, destroy_block, execute_block)
   end
 
   def entry_exist? entry_name
-    create_block = lambda { Zip::Reader.new(@name) }
+    create_block = lambda { ZipReader.new(@name) }
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.entry_exist?(entry_name) }
 
@@ -26,7 +26,7 @@ class Zip::DSL
   end
 
   def entries_size
-    create_block = lambda { Zip::Reader.new(@name) }
+    create_block = lambda { ZipReader.new(@name) }
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.entries_size }
 
@@ -34,7 +34,7 @@ class Zip::DSL
   end
 
   def list dir="."
-    create_block = lambda { Zip::Reader.new(@name) }
+    create_block = lambda { ZipReader.new(@name) }
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.list(dir) }
 

@@ -1,6 +1,6 @@
 require 'zip/zip'
 
-class Zip::Reader
+class ZipReader
   include Enumerable
 
   def initialize name

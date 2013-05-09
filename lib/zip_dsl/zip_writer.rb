@@ -1,6 +1,6 @@
 require 'zip/zip'
 
-class Zip::Writer
+class ZipWriter
 
   def initialize file_name, basedir
     @zos = Zip::ZipOutputStream.new(file_name)

@@ -2,10 +2,10 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 require 'zip_dsl'
 
-describe Zip::DSL do
+describe ZipDSL do
   let(:basedir) { "#{File.dirname(__FILE__)}/.." }
 
-  subject { Zip::DSL.new "../test.zip", basedir }
+  subject { ZipDSL.new "../test.zip", basedir }
 
   it "should create new zip file with files at particular folder" do
     subject.build do
