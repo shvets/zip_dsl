@@ -5,7 +5,7 @@ require 'zip_dsl'
 describe ZipDSL do
   let(:basedir) { "#{File.dirname(__FILE__)}/.." }
 
-  subject { ZipDSL.new "../test.zip", basedir }
+  subject { ZipDSL.new "test.zip", basedir }
 
   it "should create new zip file with files at particular folder" do
     subject.build do
@@ -56,6 +56,24 @@ describe ZipDSL do
 
     subject.entry_exist?("my_config").should be_true
     subject.entries_size.should > 1
+  end
+
+  it "should update existing zip file" do
+    subject.build do
+      file :name => "Gemfile"
+    end
+
+    File.exist?(subject.name).should be_true
+    subject.entry_exist?("Gemfile").should be_true
+
+    subject.update do
+      file :name => "README.md"
+      directory :from_dir => "lib"
+    end
+
+    subject.entry_exist?("Gemfile").should be_true
+    subject.entry_exist?("README.md").should be_true
+    subject.entry_exist?("lib/zip_dsl/version.rb").should be_true
   end
 
   it "should display files in current directory" do

@@ -3,6 +3,8 @@ require 'meta_methods'
 class ZipDSL
   include MetaMethods
 
+  attr_reader :name, :basedir
+
   def initialize name, basedir
     @name = File.expand_path(name)
     @basedir = File.expand_path(basedir)
@@ -13,6 +15,15 @@ class ZipDSL
 
     create_block = lambda { ZipWriter.new(name, @basedir) }
     destroy_block = lambda {|writer| writer.close }
+
+    evaluate_dsl(create_block, destroy_block, execute_block)
+  end
+
+  def update(name=nil, &execute_block)
+    name = name.nil? ? @name : name
+
+    create_block = lambda { ZipUpdater.new(name, @basedir) }
+    destroy_block = lambda {|updater| updater.close }
 
     evaluate_dsl(create_block, destroy_block, execute_block)
   end

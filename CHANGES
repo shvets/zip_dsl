@@ -1,0 +1,9 @@
+= Zip DSL
+
+== Version 1.0.0
+
+* Initial release.
+
+== Version 1.2.0
+
+* Adding support for archive update.
