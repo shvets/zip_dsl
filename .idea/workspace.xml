@@ -67,7 +67,7 @@
       <file leaf-file-name="zip_dsl_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="84" selection-end="84" vertical-scroll-proportion="0.025889968">
+            <state line="34" column="92" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.8543689">
               <folding />
             </state>
           </provider>
@@ -576,10 +576,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="332" y="142" width="1588" height="1058" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -775,7 +775,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="84" selection-end="84" vertical-scroll-proportion="0.025889968">
+        <state line="34" column="92" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.8543689">
           <folding />
         </state>
       </provider>
