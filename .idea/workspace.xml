@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="Adding support for archive update.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CHANGES" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
+    <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="Move DirectoryBuilder into separate gem - DirDSL">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/directory_builder.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/directory_builder_spec.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/zip_builder_spec.rb" afterPath="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.zip" afterPath="$PROJECT_DIR$/test.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ruby-version" afterPath="$PROJECT_DIR$/.ruby-version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGES" afterPath="$PROJECT_DIR$/CHANGES" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/version.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/zip_builder_spec.rb" afterPath="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/zip_dsl.iml" afterPath="$PROJECT_DIR$/.idea/zip_dsl.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
     </list>
     <ignored path="zip_dsl.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1371500142092" ignored="false" />
+    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380574330194" ignored="false" />
     <file path="/a.dummy" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117970780" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117888557" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/.ruby-version" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117774301" ignored="false" />
@@ -43,6 +43,8 @@
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/templates/WEB-INF/web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/.idea/workspace.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1371496242412" ignored="false" />
     <file path="$USER_HOME$/work/ui/src/build2/META-INF/init.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1371496050410" ignored="false" />
+    <file path="/CHANGES" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380574032229" ignored="false" />
+    <file path="/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380574041096" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,64 +64,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="zip_builder_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/zip_builder_spec.rb">
+      <file leaf-file-name="zip_dsl_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="38" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.0">
+            <state line="2" column="20" selection-start="84" selection-end="84" vertical-scroll-proportion="0.025889968">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
+      <file leaf-file-name="zip_dsl.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/zip_dsl.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="16" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+            <state line="2" column="28" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".ruby-version" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.ruby-version">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CHANGES" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CHANGES" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CHANGES">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="2" selection-start="69" selection-end="69" vertical-scroll-proportion="0.20779221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".ruby-gemset" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.ruby-gemset">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip_updater.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip_writer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="1475" selection-end="1550" vertical-scroll-proportion="-10.692307">
+            <state line="12" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,11 +110,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/directory_builder.rb" />
-        <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/zip_dsl.gemspec" />
         <option value="$PROJECT_DIR$/.ruby_version" />
         <option value="$PROJECT_DIR$/.ruby-gemset" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
         <option value="$PROJECT_DIR$/spec/directory_builder_spec.rb" />
@@ -156,9 +120,11 @@
         <option value="$PROJECT_DIR$/lib/zip_dsl.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
         <option value="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$PROJECT_DIR$/CHANGES" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
+        <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -194,6 +160,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,6 +176,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="zip_dsl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zip_dsl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zip_dsl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -246,18 +227,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -265,7 +246,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.ZipDSL should update existing zip file">
+  <component name="RunManager" selected="RSpec.zip_dsl_spec">
     <configuration default="false" name="DirectoryBuilder should display files in current directory" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="zip_dsl" />
@@ -356,7 +337,7 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="ZipDSL should create new zip file with files at particular folder" />
@@ -390,7 +371,7 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="ZipDSL should update existing zip file" />
@@ -406,7 +387,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="zip_builder_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="zip_dsl_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="zip_dsl" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -426,7 +407,7 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
@@ -572,15 +553,15 @@
       <item index="2" class="java.lang.String" itemvalue="RSpec.directory_builder_spec" />
       <item index="3" class="java.lang.String" itemvalue="RSpec.ZipDSL should create new zip file with files at particular folder" />
       <item index="4" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.zip_builder_spec" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.zip_builder_spec" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.ZipDSL should create new zip file with files at particular folder" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.directory_builder_spec" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.zip_builder_spec" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.ZipDSL should create new zip file with files at particular folder" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.directory_builder_spec" />
       </list>
     </recent_temporary>
   </component>
@@ -595,13 +576,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="332" y="142" width="1588" height="1058" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25680932" sideWeight="0.67013526" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26718548" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -612,7 +594,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="jenkinsBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -661,7 +642,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding support for archive update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Move DirectoryBuilder into separate gem - DirDSL" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -676,16 +657,13 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Adding support for archive update." />
+    <MESSAGE value="Move DirectoryBuilder into separate gem - DirDSL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/directory_builder.rb</url>
-          <line>37</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/zip_builder_spec.rb</url>
+          <url>file://$PROJECT_DIR$/spec/zip_dsl_spec.rb</url>
           <line>10</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
@@ -700,134 +678,104 @@
           <url>file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@zip_dsl/gems/rubyzip-0.9.8/lib/zip/zip_output_stream.rb</url>
           <line>64</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/directory_builder_spec.rb</url>
-          <line>34</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/directory_builder_spec.rb</url>
-          <line>30</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/Rakefile</url>
-          <line>17</line>
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/CHANGES">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429@zip_dsl/gems/meta_methods-1.0.5/lib/meta_methods/meta_methods.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="6" selection-start="770" selection-end="770" vertical-scroll-proportion="0.3322091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/directory_builder_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.8181818">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p429@zip_dsl/gems/zip-2.0.2/lib/zip/zip.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1345" column="8" selection-start="38851" selection-end="38851" vertical-scroll-proportion="-0.3685065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="9" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="86" selection-end="86" vertical-scroll-proportion="0.051948052">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.6233766">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="723" selection-end="723" vertical-scroll-proportion="0.84415585">
+        <state line="12" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1475" selection-end="1550" vertical-scroll-proportion="-10.692307">
-          <folding />
-        </state>
+        <state line="66" column="0" selection-start="1475" selection-end="1550" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/zip_builder_spec.rb">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="38" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="9" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="1475" selection-end="1550" vertical-scroll-proportion="0.025974026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="16" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="70" column="0" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.025974026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.ruby-gemset">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.ruby-version">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0">
+        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="0" selection-end="804" vertical-scroll-proportion="0.12987013">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="218" selection-end="218" vertical-scroll-proportion="0.38961038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="94" selection-start="536" selection-end="536" vertical-scroll-proportion="0.5974026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="28" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CHANGES">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="69" selection-end="69" vertical-scroll-proportion="0.20779221">
+        <state line="12" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="84" selection-end="84" vertical-scroll-proportion="0.025889968">
           <folding />
         </state>
       </provider>

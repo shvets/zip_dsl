@@ -7,3 +7,7 @@
 == Version 1.2.0
 
 * Adding support for archive update.
+
+== Version 1.3.0
+
+* Move DirectoryBuilder into separate gem - DirDSL.
