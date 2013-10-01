@@ -35,3 +35,9 @@ RSpec::Core::RakeTask.new do |task|
   task.pattern = 'spec/**/*_spec.rb'
   task.verbose = false
 end
+
+task :fix_debug do
+  system "mkdir -p $GEM_HOME/gems/debugger-ruby_core_source-1.2.3/lib"
+  system "cp -R ~/debugger-ruby_core_source/lib $GEM_HOME/gems/debugger-ruby_core_source-1.2.3"
+end
+

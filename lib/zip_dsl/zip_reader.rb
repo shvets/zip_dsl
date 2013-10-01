@@ -3,8 +3,8 @@ require 'zip/zip'
 class ZipReader
   include Enumerable
 
-  def initialize name
-    @zis = Zip::ZipInputStream.new(name)
+  def initialize to_root, name
+    @zis = Zip::ZipInputStream.new("#{to_root}/#{name}")
   end
 
   def each(&block)

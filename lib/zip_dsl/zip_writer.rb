@@ -2,10 +2,10 @@ require 'zip/zip'
 
 class ZipWriter
 
-  def initialize basedir, file_name
-    create_dir file_name
-    @zos = Zip::ZipOutputStream.new(file_name)
-    @basedir = basedir
+  def initialize from_root, to_root, name
+    @from_root = from_root
+
+    @zos = Zip::ZipOutputStream.new("#{to_root}/#{name}")
 
     @compression_level = Zlib::BEST_COMPRESSION
   end
@@ -103,17 +103,7 @@ class ZipWriter
   end
 
   def full_name name
-    full_name?(name) ? name : "#@basedir/#{name}"
-  end
-
-  private
-
-  def create_dir file_name
-    dir = File.dirname(file_name)
-
-    unless File.exists? dir
-      FileUtils.mkdir_p dir
-    end
+    full_name?(name) ? name : "#{@from_root}/#{name}"
   end
 
 end

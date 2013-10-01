@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="Bug fixes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/zip_dsl_spec.rb" afterPath="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
     </list>
     <ignored path="zip_dsl.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="build" />
-    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662462673" ignored="false" />
+    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664364764" ignored="false" />
     <file path="/a.dummy" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117970780" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117888557" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/.ruby-version" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117774301" ignored="false" />
@@ -37,10 +42,13 @@
     <file path="/CHANGES" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380661521876" ignored="false" />
     <file path="/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380574041096" ignored="false" />
     <file path="/zip_dsl.gemspec.erb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380661544183" ignored="false" />
-    <file path="/zip_dsl.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662173419" ignored="false" />
-    <file path="/zip_dsl_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662011065" ignored="false" />
-    <file path="/zip_writer.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662330710" ignored="false" />
+    <file path="/zip_dsl.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380663916558" ignored="false" />
+    <file path="/zip_dsl_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380663980003" ignored="false" />
+    <file path="/zip_writer.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664308926" ignored="false" />
     <file path="/.gitignore" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662409975" ignored="false" />
+    <file path="/zip_updater.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664070187" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664364451" ignored="false" />
+    <file path="/zip_reader.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664021416" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,16 +71,7 @@
       <file leaf-file-name="zip_dsl_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="106" selection-start="943" selection-end="943" vertical-scroll-proportion="0.77795786">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="18" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
+            <state line="5" column="18" selection-start="136" selection-end="136" vertical-scroll-proportion="0.15397082">
               <folding />
             </state>
           </provider>
@@ -81,7 +80,16 @@
       <file leaf-file-name="zip_dsl.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+            <state line="46" column="49" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-28.307692">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rakefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="83" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +98,7 @@
       <file leaf-file-name="zip_writer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+            <state line="7" column="46" selection-start="152" selection-end="152" vertical-scroll-proportion="-4.3076925">
               <folding />
             </state>
           </provider>
@@ -99,7 +107,25 @@
       <file leaf-file-name="zip_reader.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="9" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+            <state line="6" column="45" selection-start="133" selection-end="133" vertical-scroll-proportion="-3.6923077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zip_updater.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="44" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,21 +150,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.ruby-gemset" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" />
         <option value="$PROJECT_DIR$/spec/directory_builder_spec.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl.rb" />
         <option value="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
-        <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
         <option value="$PROJECT_DIR$/CHANGES" />
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$PROJECT_DIR$/zip_dsl.gemspec.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
-        <option value="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
+        <option value="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
       </list>
     </option>
   </component>
@@ -260,41 +286,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.zip_dsl_spec">
-    <configuration default="false" name="directory_builder_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="zip_dsl" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/directory_builder_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.ZipDSL">
     <configuration default="false" name="ZipDSL should create new zip file with files at particular folder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="zip_dsl" />
@@ -325,7 +317,9 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -383,6 +377,40 @@
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ZipDSL" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="zip_dsl" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="ZipDSL" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -549,18 +577,18 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Rake.rake" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.directory_builder_spec" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.ZipDSL should create new zip file with files at particular folder" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.zip_writer" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.ZipDSL should create new zip file with files at particular folder" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.zip_writer" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.ZipDSL" />
       <item index="5" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.ZipDSL" />
         <item index="1" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.zip_writer" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.ZipDSL should create new zip file with files at particular folder" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
       </list>
     </recent_temporary>
@@ -580,7 +608,11 @@
       <created>1380661978616</created>
       <updated>1380661978616</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bug fixes">
+      <created>1380662487368</created>
+      <updated>1380662487368</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -673,10 +705,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/zip_dsl_spec.rb</url>
-          <line>10</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@zip_dsl/gems/rubyzip-0.9.8/lib/zip/zip_entry.rb</url>
           <line>443</line>
         </line-breakpoint>
@@ -688,32 +716,16 @@
           <url>file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@zip_dsl/gems/rubyzip-0.9.8/lib/zip/zip_output_stream.rb</url>
           <line>64</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="86" selection-end="86" vertical-scroll-proportion="0.051948052">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.ruby-gemset">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ruby-version">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -724,13 +736,6 @@
     <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="252" selection-end="252" vertical-scroll-proportion="0.23376623">
           <folding />
         </state>
       </provider>
@@ -756,41 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="72" selection-end="72" vertical-scroll-proportion="0.10372771">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="9" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="17" selection-start="170" selection-end="170" vertical-scroll-proportion="0.49270666">
@@ -798,9 +768,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448@zip_dsl/gems/zip-2.0.2/lib/zip/zip.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="924" column="8" selection-start="27024" selection-end="27024" vertical-scroll-proportion="0.33225283">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="18" selection-start="60" selection-end="60" vertical-scroll-proportion="0.07779579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="83" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448@zip_dsl/gems/rspec-core-2.14.5/lib/rspec/core/memoized_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="0" selection-start="6885" selection-end="6885" vertical-scroll-proportion="0.29659644">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="49" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-28.307692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="45" selection-start="133" selection-end="133" vertical-scroll-proportion="-3.6923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="46" selection-start="152" selection-end="152" vertical-scroll-proportion="-4.3076925">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="44" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="106" selection-start="943" selection-end="943" vertical-scroll-proportion="0.77795786">
+        <state line="5" column="18" selection-start="136" selection-end="136" vertical-scroll-proportion="0.15397082">
           <folding />
         </state>
       </provider>

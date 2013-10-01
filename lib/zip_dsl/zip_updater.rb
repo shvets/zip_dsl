@@ -2,9 +2,9 @@ require 'zip/zip'
 
 class ZipUpdater
 
-  def initialize basedir, file_name
-    @zipfile = Zip::ZipFile.open(file_name)
-    @basedir = basedir
+  def initialize from_root, to_root, name
+    @from_root = from_root
+    @zipfile = Zip::ZipFile.open("#{to_root}/#{name}")
   end
 
   def close
@@ -99,7 +99,7 @@ class ZipUpdater
   end
 
   def full_name name
-    full_name?(name) ? name : "#@basedir/#{name}"
+    full_name?(name) ? name : "#{@from_root}/#{name}"
   end
 
 end

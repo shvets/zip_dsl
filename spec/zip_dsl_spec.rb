@@ -1,11 +1,19 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 require 'zip_dsl'
+require 'file_utils/file_utils'
 
 describe ZipDSL do
-  let(:basedir) { "#{File.dirname(__FILE__)}/.." }
+  include FileUtils
 
-  subject { ZipDSL.new basedir, "build/test.zip" }
+  let(:from_basedir) { "." }
+  let(:to_basedir) { "build" }
+
+  subject { ZipDSL.new from_basedir, to_basedir, "test.zip" }
+
+  after do
+    delete_directory "build"
+  end
 
   it "should create new zip file with files at particular folder" do
     subject.build do
@@ -31,7 +39,7 @@ describe ZipDSL do
   end
 
   it "should create new zip file with file created from file" do
-    src = File.open("#{basedir}/Rakefile")
+    src = File.open("#{from_basedir}/Rakefile")
     subject.build do
       content :name => "Rakefile",  :source => src
     end
@@ -63,7 +71,7 @@ describe ZipDSL do
       file :name => "Gemfile"
     end
 
-    File.exist?(subject.name).should be_true
+    File.exist?("#{subject.to_root}/#{subject.name}").should be_true
     subject.entry_exist?("Gemfile").should be_true
 
     subject.update do
