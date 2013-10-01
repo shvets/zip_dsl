@@ -1,11 +1,7 @@
-require 'meta_methods'
-
 class ZipDSL
-  include MetaMethods
-
   attr_reader :name, :basedir
 
-  def initialize name, basedir
+  def initialize basedir, name
     @name = File.expand_path(name)
     @basedir = File.expand_path(basedir)
   end
@@ -16,7 +12,7 @@ class ZipDSL
     create_block = lambda { ZipWriter.new(name, @basedir) }
     destroy_block = lambda {|writer| writer.close }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    evaluate(create_block, destroy_block, execute_block)
   end
 
   def update(name=nil, &execute_block)
@@ -25,7 +21,7 @@ class ZipDSL
     create_block = lambda { ZipUpdater.new(name, @basedir) }
     destroy_block = lambda {|updater| updater.close }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    evaluate(create_block, destroy_block, execute_block)
   end
 
   def entry_exist? entry_name
@@ -33,7 +29,7 @@ class ZipDSL
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.entry_exist?(entry_name) }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    evaluate(create_block, destroy_block, execute_block)
   end
 
   def entries_size
@@ -41,7 +37,7 @@ class ZipDSL
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.entries_size }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    evaluate(create_block, destroy_block, execute_block)
   end
 
   def list dir="."
@@ -49,8 +45,19 @@ class ZipDSL
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.list(dir) }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    evaluate(create_block, destroy_block, execute_block)
   end
 
+  private
+
+  def evaluate(create_block, destroy_block, execute_block)
+    begin
+      created_object = create_block.kind_of?(Proc) ? create_block.call : create_block
+
+      created_object.instance_eval(&execute_block)
+    ensure
+      destroy_block.call(created_object) if destroy_block && created_object
+    end
+  end
 end
 
