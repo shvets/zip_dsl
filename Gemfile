@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 group :default do
-  gem "meta_methods"
   gem "zip"
   gem "file_utils"
 end
