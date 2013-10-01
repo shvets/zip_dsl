@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="Bug fixes">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/zip_dsl_spec.rb" afterPath="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
     </list>
     <ignored path="zip_dsl.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="build" />
-    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662435166" ignored="false" />
+    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662462673" ignored="false" />
     <file path="/a.dummy" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117970780" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117888557" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/.ruby-version" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117774301" ignored="false" />
@@ -69,7 +63,7 @@
       <file leaf-file-name="zip_dsl_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="11" selection-start="66" selection-end="66" vertical-scroll-proportion="0.025931928">
+            <state line="30" column="106" selection-start="943" selection-end="943" vertical-scroll-proportion="0.77795786">
               <folding />
             </state>
           </provider>
@@ -806,7 +800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="66" selection-end="66" vertical-scroll-proportion="0.025931928">
+        <state line="30" column="106" selection-start="943" selection-end="943" vertical-scroll-proportion="0.77795786">
           <folding />
         </state>
       </provider>
