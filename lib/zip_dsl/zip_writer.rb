@@ -2,7 +2,8 @@ require 'zip/zip'
 
 class ZipWriter
 
-  def initialize file_name, basedir
+  def initialize basedir, file_name
+    create_dir file_name
     @zos = Zip::ZipOutputStream.new(file_name)
     @basedir = basedir
 
@@ -103,6 +104,16 @@ class ZipWriter
 
   def full_name name
     full_name?(name) ? name : "#@basedir/#{name}"
+  end
+
+  private
+
+  def create_dir file_name
+    dir = File.dirname(file_name)
+
+    unless File.exists? dir
+      FileUtils.mkdir_p dir
+    end
   end
 
 end

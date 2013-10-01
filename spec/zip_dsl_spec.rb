@@ -5,7 +5,7 @@ require 'zip_dsl'
 describe ZipDSL do
   let(:basedir) { "#{File.dirname(__FILE__)}/.." }
 
-  subject { ZipDSL.new basedir, "test.zip" }
+  subject { ZipDSL.new basedir, "build/test.zip" }
 
   it "should create new zip file with files at particular folder" do
     subject.build do

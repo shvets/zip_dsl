@@ -1,15 +1,15 @@
 class ZipDSL
-  attr_reader :name, :basedir
+  attr_reader :basedir, :name
 
   def initialize basedir, name
-    @name = File.expand_path(name)
     @basedir = File.expand_path(basedir)
+    @name = File.expand_path(name)
   end
 
   def build(name=nil, &execute_block)
     name = name.nil? ? @name : name
 
-    create_block = lambda { ZipWriter.new(name, @basedir) }
+    create_block = lambda { ZipWriter.new(@basedir, name) }
     destroy_block = lambda {|writer| writer.close }
 
     evaluate(create_block, destroy_block, execute_block)
@@ -18,7 +18,7 @@ class ZipDSL
   def update(name=nil, &execute_block)
     name = name.nil? ? @name : name
 
-    create_block = lambda { ZipUpdater.new(name, @basedir) }
+    create_block = lambda { ZipUpdater.new(@basedir, name) }
     destroy_block = lambda {|updater| updater.close }
 
     evaluate(create_block, destroy_block, execute_block)

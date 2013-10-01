@@ -2,7 +2,7 @@ require 'zip/zip'
 
 class ZipUpdater
 
-  def initialize file_name, basedir
+  def initialize basedir, file_name
     @zipfile = Zip::ZipFile.open(file_name)
     @basedir = basedir
   end
