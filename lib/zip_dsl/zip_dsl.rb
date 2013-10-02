@@ -54,17 +54,5 @@ class ZipDSL
 
     evaluate_dsl(create_block, destroy_block, execute_block)
   end
-
-  private
-
-  def evaluate_dsl(create_block, destroy_block, execute_block)
-    begin
-      created_object = create_block.kind_of?(Proc) ? create_block.call : create_block
-
-      created_object.instance_eval(&execute_block)
-    ensure
-      destroy_block.call(created_object) if destroy_block && created_object
-    end
-  end
 end
 
