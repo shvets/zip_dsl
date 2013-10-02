@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="Bug fixes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+    <list default="true" id="aafa5aec-b597-47d5-af91-f7b63300321f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGES" afterPath="$PROJECT_DIR$/CHANGES" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/version.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zip_dsl.gemspec" afterPath="$PROJECT_DIR$/zip_dsl.gemspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/zip_dsl.iml" afterPath="$PROJECT_DIR$/.idea/zip_dsl.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/zip_dsl_spec.rb" afterPath="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" afterPath="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
     </list>
     <ignored path="zip_dsl.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="build" />
-    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664364764" ignored="false" />
+    <file path="/Dummy.txt" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731943460" ignored="false" />
     <file path="/a.dummy" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117970780" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117888557" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/.ruby-version" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117774301" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664977410" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/.ruby-version" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664605677" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/.ruby-gemset" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117786033" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/lib/web_app_builder/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117806264" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/lib/web_app_builder/web_app_builder.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368117986135" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/build/WEB-INF/jboss-web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/lib/web_app_builder/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664682867" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/lib/web_app_builder/web_app_builder.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380730132438" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/build/WEB-INF/jboss-web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380730228347" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/jboss-web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/build/META-INF/context.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/build/META-INF/context.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380730228347" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/META-INF/context.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/templates/META-INF/context.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/templates/postgres-ds.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
@@ -31,24 +32,65 @@
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/META-INF/context.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/WEB-INF/web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/WEB-INF/jboss-web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/build/WEB-INF/web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/build/WEB-INF/web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380730228347" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/jboss-web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
-    <file path="$PROJECT_DIR$/../web_app_builder/build/postgres-ds.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/build/postgres-ds.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380730228347" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/postgres-ds.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/build/exploded/WEB-INF/config/templates/WEB-INF/web.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1368118068883" ignored="false" />
     <file path="$PROJECT_DIR$/../web_app_builder/.idea/workspace.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1371496242412" ignored="false" />
     <file path="$USER_HOME$/work/ui/src/build2/META-INF/init.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1371496050410" ignored="false" />
-    <file path="/CHANGES" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380661521876" ignored="false" />
-    <file path="/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380574041096" ignored="false" />
+    <file path="/CHANGES" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731416907" ignored="false" />
+    <file path="/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731064433" ignored="false" />
     <file path="/zip_dsl.gemspec.erb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380661544183" ignored="false" />
-    <file path="/zip_dsl.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380663916558" ignored="false" />
+    <file path="/zip_dsl.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731999831" ignored="false" />
     <file path="/zip_dsl_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380663980003" ignored="false" />
     <file path="/zip_writer.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664308926" ignored="false" />
     <file path="/.gitignore" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380662409975" ignored="false" />
     <file path="/zip_updater.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664070187" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664364451" ignored="false" />
     <file path="/zip_reader.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664021416" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/Rakefile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664670446" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/CHANGES" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664691967" ignored="false" />
+    <file path="$PROJECT_DIR$/../web_app_builder/web_app_builder.gemspec.erb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664701445" ignored="false" />
+    <file path="/web_app_builder.gemspec.erb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380664700012" ignored="false" />
+    <file path="/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731969589" ignored="false" />
+    <file path="/web_app_builder.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380730118665" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/requests/cars_controller_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727444930" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/api/carts_controller_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727369785" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/requests/requests_spec_helper.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727239037" ignored="false" />
+    <file path="/requests_spec_helper.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727239037" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/support/spec_conf.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727649355" ignored="false" />
+    <file path="/spec_conf.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727588016" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/support/requests_shared_context.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727339843" ignored="false" />
+    <file path="/requests_shared_context.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727339843" ignored="false" />
+    <file path="/cars_controller_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727387778" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/routing/carts_controller_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727701269" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/requests/carts_controller_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727649355" ignored="false" />
+    <file path="/carts_controller_spec.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727694965" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/routing/routing_spec_helper.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727568127" ignored="false" />
+    <file path="/routing_spec_helper.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727568127" ignored="false" />
+    <file path="$USER_HOME$/work/ui/neptune/spec/support/routing_shared_context.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727610044" ignored="false" />
+    <file path="/routing_shared_context.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380727610044" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/ruby-1.9.3-p448@web_app_builder/gems/zip_dsl-1.3.1/lib/zip_dsl/zip_dsl.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380730227878" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/lib/meta_methods/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731064433" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/.ruby-gemset" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731026702" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/.ruby-version" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731037787" ignored="false" />
+    <file path="/.ruby-version" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731037138" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731101869" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/Rakefile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731156382" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/lib/meta_methods/meta_methods.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731354256" ignored="false" />
+    <file path="/meta_methods.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731311028" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/LICENSE" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731383408" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/meta_methods.gemspec.erb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731390857" ignored="false" />
+    <file path="/meta_methods.gemspec.erb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731389668" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/CHANGES" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731416907" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/meta_methods.gemspec" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731432518" ignored="false" />
+    <file path="$PROJECT_DIR$/../meta_methods/.idea/workspace.xml" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731462477" ignored="false" />
+    <file path="$PROJECT_DIR$/../dir_dsl/Gemfile" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731492240" ignored="false" />
+    <file path="$PROJECT_DIR$/../dir_dsl/lib/dir_dsl/dir_dsl.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731571419" ignored="false" />
+    <file path="/dir_dsl.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731560121" ignored="false" />
+    <file path="$PROJECT_DIR$/../dir_dsl/lib/dir_dsl/version.rb" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731625061" ignored="false" />
+    <file path="$PROJECT_DIR$/../dir_dsl/CHANGES" changelist="aafa5aec-b597-47d5-af91-f7b63300321f" time="1380731633103" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +110,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="zip_dsl_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="zip_dsl_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="18" selection-start="136" selection-end="136" vertical-scroll-proportion="0.15397082">
+            <state line="4" column="24" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGES" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CHANGES">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="2" selection-start="228" selection-end="237" vertical-scroll-proportion="0.5177994">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="19" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,52 +140,7 @@
       <file leaf-file-name="zip_dsl.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="49" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-28.307692">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="83" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip_writer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="46" selection-start="152" selection-end="152" vertical-scroll-proportion="-4.3076925">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip_reader.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="45" selection-start="133" selection-end="133" vertical-scroll-proportion="-3.6923077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zip_updater.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="44" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="59" column="18" selection-start="1690" selection-end="1690" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,18 +168,18 @@
         <option value="$PROJECT_DIR$/spec/directory_builder_spec.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl.rb" />
         <option value="$PROJECT_DIR$/spec/zip_builder_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
-        <option value="$PROJECT_DIR$/CHANGES" />
         <option value="$PROJECT_DIR$/.ruby-version" />
         <option value="$PROJECT_DIR$/zip_dsl.gemspec.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
         <option value="$PROJECT_DIR$/spec/zip_dsl_spec.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_updater.rb" />
         <option value="$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb" />
+        <option value="$PROJECT_DIR$/CHANGES" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/version.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb" />
       </list>
     </option>
   </component>
@@ -200,7 +215,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,6 +281,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +301,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.ZipDSL">
+  <component name="RunManager" selected="RSpec.zip_dsl_spec">
     <configuration default="false" name="ZipDSL should create new zip file with files at particular folder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="zip_dsl" />
@@ -585,10 +600,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.ZipDSL" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.ZipDSL" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.ZipDSL should update existing zip file" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.zip_dsl_spec" />
       </list>
     </recent_temporary>
@@ -612,19 +627,22 @@
       <created>1380662487368</created>
       <updated>1380662487368</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bug fixes">
+      <created>1380664427013</created>
+      <updated>1380664427013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="332" y="142" width="1588" height="1058" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32778355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27107653" sideWeight="0.67117584" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27885863" sideWeight="0.6722164" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -635,6 +653,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="jenkinsBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -728,91 +747,44 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.ruby-version">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="690" selection-end="690" vertical-scroll-proportion="0.54145515">
-          <folding />
-        </state>
+        <state line="20" column="16" selection-start="690" selection-end="690" vertical-scroll-proportion="0.54145515" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448@zip_dsl/gems/meta_methods-1.0.5/lib/meta_methods/meta_methods.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="764" selection-end="1321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGES">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="152" selection-end="152" vertical-scroll-proportion="0.31118315">
-          <folding />
-        </state>
+        <state line="35" column="0" selection-start="764" selection-end="1321" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="170" selection-end="170" vertical-scroll-proportion="0.49270666">
-          <folding />
-        </state>
+        <state line="19" column="17" selection-start="170" selection-end="170" vertical-scroll-proportion="0.49270666" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448@zip_dsl/gems/zip-2.0.2/lib/zip/zip.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="924" column="8" selection-start="27024" selection-end="27024" vertical-scroll-proportion="0.33225283">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="60" selection-end="60" vertical-scroll-proportion="0.07779579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="83" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="924" column="8" selection-start="27024" selection-end="27024" vertical-scroll-proportion="0.33225283" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448@zip_dsl/gems/rspec-core-2.14.5/lib/rspec/core/memoized_helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="0" selection-start="6885" selection-end="6885" vertical-scroll-proportion="0.29659644">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="49" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-28.307692">
-          <folding />
-        </state>
+        <state line="198" column="0" selection-start="6885" selection-end="6885" vertical-scroll-proportion="0.29659644" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_reader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="45" selection-start="133" selection-end="133" vertical-scroll-proportion="-3.6923077">
+        <state line="6" column="45" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_writer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="152" selection-end="152" vertical-scroll-proportion="-4.3076925">
+        <state line="7" column="46" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -824,16 +796,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zip_dsl.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="34" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/zip_dsl/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="18" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0171123">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/zip_dsl/zip_dsl.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="18" selection-start="1690" selection-end="1690" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/zip_dsl_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="136" selection-end="136" vertical-scroll-proportion="0.15397082">
+        <state line="4" column="24" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGES">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="2" selection-start="228" selection-end="237" vertical-scroll-proportion="0.5177994">
           <folding />
         </state>
       </provider>
