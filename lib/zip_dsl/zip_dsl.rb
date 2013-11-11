@@ -54,5 +54,13 @@ class ZipDSL
 
     evaluate_dsl(create_block, destroy_block, execute_block)
   end
+
+  def each_entry dir=".", &code
+    create_block = lambda { ZipReader.new(to_root, name) }
+    destroy_block = lambda {|reader| reader.close }
+    execute_block = lambda { |reader| reader.each_entry(dir, &code) }
+
+    evaluate_dsl(create_block, destroy_block, execute_block)
+  end
 end
 

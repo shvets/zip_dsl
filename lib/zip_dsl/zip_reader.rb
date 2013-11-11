@@ -56,6 +56,14 @@ class ZipReader
     entries
   end
 
+  def each_entry dir=".", &code
+    self.each do |entry|
+      if entry.name =~ /#{dir}/
+        code.call(entry)
+      end
+    end
+  end
+
   private
 
   def dir_entry? entry
