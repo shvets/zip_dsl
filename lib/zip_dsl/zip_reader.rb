@@ -13,6 +13,7 @@ class ZipReader
     zis.rewind
 
     while (entry = zis.get_next_entry)
+      next if entry.name =~ %r{\.\.}
       block.call(entry)
     end
   end
