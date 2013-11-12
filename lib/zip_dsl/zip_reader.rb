@@ -3,20 +3,22 @@ require 'zip/zip'
 class ZipReader
   include Enumerable
 
-  def initialize to_root, name
-    @zis = Zip::ZipInputStream.new("#{to_root}/#{name}")
+  attr_reader :zis
+
+  def initialize name
+    @zis = Zip::ZipInputStream.new("#{name}")
   end
 
   def each(&block)
-    @zis.rewind
+    zis.rewind
 
-    while (entry = @zis.get_next_entry)
+    while (entry = zis.get_next_entry)
       block.call(entry)
     end
   end
 
   def close
-    @zis.close
+    zis.close
   end
 
   def entry_exist? entry_name

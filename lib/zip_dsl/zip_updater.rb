@@ -1,10 +1,11 @@
 require 'zip/zip'
 
 class ZipUpdater
+  attr_reader :from_dir
 
-  def initialize from_root, to_root, name
-    @from_root = from_root
-    @zipfile = Zip::ZipFile.open("#{to_root}/#{name}")
+  def initialize name, from_dir
+    @from_dir = from_dir
+    @zipfile = Zip::ZipFile.open(name)
   end
 
   def close
@@ -99,7 +100,7 @@ class ZipUpdater
   end
 
   def full_name name
-    full_name?(name) ? name : "#{@from_root}/#{name}"
+    full_name?(name) ? name : "#{from_dir}/#{name}"
   end
 
 end

@@ -1,11 +1,12 @@
 require 'zip/zip'
 
 class ZipWriter
+  attr_reader :from_dir
 
-  def initialize from_root, to_root, name
-    @from_root = from_root
+  def initialize name, from_dir
+    @from_dir = from_dir
 
-    @zos = Zip::ZipOutputStream.new("#{to_root}/#{name}")
+    @zos = Zip::ZipOutputStream.new(name)
 
     @compression_level = Zlib::BEST_COMPRESSION
   end
@@ -103,7 +104,7 @@ class ZipWriter
   end
 
   def full_name name
-    full_name?(name) ? name : "#{@from_root}/#{name}"
+    full_name?(name) ? name : "#{from_dir}/#{name}"
   end
 
 end

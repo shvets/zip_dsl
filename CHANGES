@@ -27,3 +27,7 @@
 == Version 1.3.5
 
 * Adding each_entry method.
+
+== Version 1.4.0
+
+* Changes in API.
