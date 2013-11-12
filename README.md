@@ -23,11 +23,10 @@ You can create new archive:
 ```ruby
 require 'zip_dsl'
 
-from_dir = "."
-to_dir = "build"
 zip_file = "test.zip"
+from_dir = "."
 
-zip_builder = ZipDSL.new from_dir, to_dir, zip_file
+zip_builder = ZipDSL.new zip_file, from_dir
 
 zip_builder.build do
   # files from 'from_dir'
@@ -49,8 +48,6 @@ end
 or update existing archive:
 
 ```ruby
-...
-
 zip_builder.update do
   file :name => "README.md"
   directory :from_dir => "lib"
@@ -60,9 +57,19 @@ end
 You can also display all entries from archive's folder:
 
 ```ruby
-...
-
 zip_builder.list("lib/zip_dsl")
+```
+
+or display entries
+
+```ruby
+zip_builder.each_entry("lib/zip_dsl") do |entry
+  puts entry.name
+
+  content = entry.get_input_stream.read
+
+  puts content
+end
 ```
 
 ## Contributing
