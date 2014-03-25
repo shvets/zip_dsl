@@ -1,7 +1,7 @@
-require 'meta_methods/meta_methods'
+require 'meta_methods'
 
 class ZipDSL
-  include MetaMethods
+  include MetaMethods::Core
 
   attr_reader :name, :from_dir
 
