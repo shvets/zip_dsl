@@ -22,11 +22,11 @@ describe ZipDSL do
         file :name => "spec/spec_helper.rb", :to_dir => "my_config"
       end
 
-      subject.entry_exist?("Gemfile").should be_true
-      subject.entry_exist?("my_config/Rakefile").should be_true
-      subject.entry_exist?("my_config/spec_helper.rb").should be_true
+      expect(subject.entry_exist?("Gemfile")).to be_truthy
+      expect(subject.entry_exist?("my_config/Rakefile")).to be_truthy
+      expect(subject.entry_exist?("my_config/spec_helper.rb")).to be_truthy
 
-      subject.entries_size.should == 3
+      expect(subject.entries_size).to eq 3
     end
 
     it "should create new zip file with file created from string" do
@@ -34,8 +34,8 @@ describe ZipDSL do
         content :name => "README", :source => "My README file content"
       end
 
-      subject.entry_exist?("README").should be_true
-      subject.entries_size.should == 1
+      expect(subject.entry_exist?("README")).to be_truthy
+      expect(subject.entries_size).to eq 1
     end
 
     it "should create new zip file with file created from file" do
@@ -44,8 +44,8 @@ describe ZipDSL do
         content :name => "Rakefile",  :source => src
       end
 
-      subject.entry_exist?("Rakefile").should be_true
-      subject.entries_size.should == 1
+      expect(subject.entry_exist?("Rakefile")).to be_truthy
+      expect(subject.entries_size).to eq 1
     end
 
     it "should create new zip file with new empty folder" do
@@ -53,8 +53,8 @@ describe ZipDSL do
         directory :to_dir => "my_config"
       end
 
-      subject.entry_exist?("my_config").should be_true
-      subject.entries_size.should == 1
+      expect(subject.entry_exist?("my_config")).to be_truthy
+      expect(subject.entries_size).to eq 1
     end
 
     it "should create new zip file with new folder" do
@@ -62,8 +62,8 @@ describe ZipDSL do
         directory :from_dir => "spec", :to_dir => "my_config"
       end
 
-      subject.entry_exist?("my_config").should be_true
-      subject.entries_size.should > 1
+      expect(subject.entry_exist?("my_config")).to be_truthy
+      expect(subject.entries_size).to be > 1
     end
   end
 
@@ -73,17 +73,17 @@ describe ZipDSL do
         file :name => "Gemfile"
       end
 
-      File.exist?(subject.name).should be_true
-      subject.entry_exist?("Gemfile").should be_true
+      expect(File.exist?(subject.name)).to be_truthy
+      expect(subject.entry_exist?("Gemfile")).to be_truthy
 
       subject.update do
         file :name => "README.md"
         directory :from_dir => "lib"
       end
 
-      subject.entry_exist?("Gemfile").should be_true
-      subject.entry_exist?("README.md").should be_true
-      subject.entry_exist?("lib/zip_dsl/version.rb").should be_true
+      expect(subject.entry_exist?("Gemfile")).to be_truthy
+      expect(subject.entry_exist?("README.md")).to be_truthy
+      expect(subject.entry_exist?("lib/zip_dsl/version.rb")).to be_truthy
     end
   end
 
@@ -93,7 +93,7 @@ describe ZipDSL do
         directory :from_dir => "spec"
       end
 
-      subject.list.should include "spec/spec_helper.rb"
+      expect(subject.list).to include "spec/spec_helper.rb"
     end
 
     it "should display files in specified subdirectory" do
@@ -101,7 +101,7 @@ describe ZipDSL do
         directory :from_dir => "lib"
       end
 
-      subject.list("lib/zip_dsl").first.should =~ %r{lib/zip_dsl/version.rb}
+      expect(subject.list("lib/zip_dsl").first).to match %r{lib/zip_dsl/version.rb}
     end
   end
 
@@ -117,8 +117,8 @@ describe ZipDSL do
         contents << content
       end
 
-      contents.first.name.should == "lib/zip_dsl/version.rb"
-      contents.first.get_input_stream.read.should =~ %r{class ZipDSL}
+      expect(contents.first.name).to eq "lib/zip_dsl/version.rb"
+      expect(contents.first.get_input_stream.read).to match %r{class ZipDSL}
     end
   end
 end

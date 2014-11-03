@@ -1,8 +1,6 @@
-require 'meta_methods'
+require 'meta_methods/dsl_builder'
 
 class ZipDSL
-  include MetaMethods::Core
-
   attr_reader :name, :from_dir
 
   def initialize name, from_dir = nil
@@ -19,7 +17,7 @@ class ZipDSL
     create_block = lambda { ZipWriter.new(name, from_dir) }
     destroy_block = lambda {|writer| writer.close }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
   end
 
   def update(name=nil, &execute_block)
@@ -28,7 +26,7 @@ class ZipDSL
     create_block = lambda { ZipUpdater.new(name, from_dir) }
     destroy_block = lambda {|updater| updater.close }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
   end
 
   def entry_exist? entry_name
@@ -36,7 +34,7 @@ class ZipDSL
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.entry_exist?(entry_name) }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
   end
 
   def entries_size
@@ -44,7 +42,7 @@ class ZipDSL
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.entries_size }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
   end
 
   def list dir="."
@@ -52,7 +50,7 @@ class ZipDSL
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.list(dir) }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
   end
 
   def each_entry dir=".", &code
@@ -60,7 +58,7 @@ class ZipDSL
     destroy_block = lambda {|reader| reader.close }
     execute_block = lambda { |reader| reader.each_entry(dir, &code) }
 
-    evaluate_dsl(create_block, destroy_block, execute_block)
+    MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
   end
 end
 
