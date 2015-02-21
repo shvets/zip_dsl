@@ -15,7 +15,7 @@ describe ZipDSL do
   end
 
   describe "#build" do
-    it "should create new zip file with files at particular folder" do
+    it "creates new zip file with files at particular folder" do
       subject.build do
         file :name => "Gemfile"
         file :name => "Rakefile", :to_dir => "my_config"
@@ -29,7 +29,7 @@ describe ZipDSL do
       expect(subject.entries_size).to eq 3
     end
 
-    it "should create new zip file with file created from string" do
+    it "creates new zip file with file created from string" do
       subject.build do
         content :name => "README", :source => "My README file content"
       end
@@ -38,7 +38,7 @@ describe ZipDSL do
       expect(subject.entries_size).to eq 1
     end
 
-    it "should create new zip file with file created from file" do
+    it "creates new zip file with file created from file" do
       src = File.open("#{from_dir}/Rakefile")
       subject.build do
         content :name => "Rakefile",  :source => src
@@ -57,7 +57,7 @@ describe ZipDSL do
       expect(subject.entries_size).to eq 1
     end
 
-    it "should create new zip file with new folder" do
+    it "creates new zip file with new folder" do
       subject.build do
         directory :from_dir => "spec", :to_dir => "my_config"
       end
@@ -65,10 +65,8 @@ describe ZipDSL do
       expect(subject.entry_exist?("my_config")).to be_truthy
       expect(subject.entries_size).to be > 1
     end
-  end
 
-  describe "#update" do
-    it "should update existing zip file" do
+    it "updates existing zip file" do
       subject.build do
         file :name => "Gemfile"
       end
@@ -76,7 +74,7 @@ describe ZipDSL do
       expect(File.exist?(subject.name)).to be_truthy
       expect(subject.entry_exist?("Gemfile")).to be_truthy
 
-      subject.update do
+      subject.build do
         file :name => "README.md"
         directory :from_dir => "lib"
       end
@@ -85,10 +83,21 @@ describe ZipDSL do
       expect(subject.entry_exist?("README.md")).to be_truthy
       expect(subject.entry_exist?("lib/zip_dsl/version.rb")).to be_truthy
     end
+
+    it "excludes specified directories" do
+      subject = ZipDSL.new "build/test.zip", from_dir, :excludes => [".git", ".idea", ".DS_Store"]
+
+      subject.build do
+        directory :from_dir => ".", :excludes => ["build"]
+      end
+
+      expect(subject.entry_exist?("build")).to be_falsey
+      expect(subject.entry_exist?(".git")).to be_falsey
+    end
   end
 
   describe "#list" do
-    it "should display files in current directory" do
+    it "displays files in current directory" do
       subject.build do
         directory :from_dir => "spec"
       end
@@ -96,7 +105,7 @@ describe ZipDSL do
       expect(subject.list).to include "spec/spec_helper.rb"
     end
 
-    it "should display files in specified subdirectory" do
+    it "displays files in specified subdirectory" do
       subject.build do
         directory :from_dir => "lib"
       end
@@ -106,7 +115,7 @@ describe ZipDSL do
   end
 
   describe "#each_entry" do
-    it "should display files in specified subdirectory" do
+    it "displays files in specified subdirectory" do
       subject.build do
         directory :from_dir => "lib"
       end

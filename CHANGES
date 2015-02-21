@@ -48,4 +48,10 @@
 
 * Bug fix.
 
+== Version 1.5.0
+
+* Merging zip_updated into zip_writer.
+* Use directory_scanner
+* Introduce includes/excludes
+
 

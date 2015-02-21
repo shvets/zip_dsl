@@ -3,9 +3,11 @@ require 'meta_methods/dsl_builder'
 class ZipDSL
   attr_reader :name, :from_dir
 
-  def initialize name, from_dir = nil
+  def initialize name, from_dir=".", params={}
     @name = name
-    @from_dir = from_dir.nil? ? from_dir : File.expand_path(from_dir)
+    @from_dir = File.expand_path(from_dir)
+    @includes = params[:includes]
+    @excludes = params[:excludes]
 
     to_root = File.expand_path(File.dirname(name))
     FileUtils.mkdir_p(to_root) unless File.exists? to_root
@@ -14,17 +16,8 @@ class ZipDSL
   def build(name=nil, &execute_block)
     name = name.nil? ? @name : name
 
-    create_block = lambda { ZipWriter.new(name, from_dir) }
+    create_block = lambda { ZipWriter.new(name, from_dir, @includes, @excludes) }
     destroy_block = lambda {|writer| writer.close }
-
-    MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
-  end
-
-  def update(name=nil, &execute_block)
-    name = name.nil? ? @name : name
-
-    create_block = lambda { ZipUpdater.new(name, from_dir) }
-    destroy_block = lambda {|updater| updater.close }
 
     MetaMethods::DslBuilder.instance.evaluate_dsl(create_block, destroy_block, execute_block)
   end
