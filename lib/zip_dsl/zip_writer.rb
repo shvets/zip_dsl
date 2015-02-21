@@ -29,7 +29,7 @@ class ZipWriter
     if @new_file
       add_file full_name(params[:name]), to_dir
     else
-      add_or_replace_file full_name(params[:name]), "#{to_dir}/#{params[:name]}"
+      add_or_replace_file full_name(params[:name]), to_dir, params[:name]
     end
   end
 
@@ -65,12 +65,22 @@ class ZipWriter
     from1 + from2
   end
 
-  def add_or_replace_file from_name, to_name
-    begin
-      @zipfile.add to_name, from_name
-    rescue Zip::ZipEntryExistsError
+  def add_or_replace_file from_name, to_dir, name
+    to_name = "#{to_dir}/#{name}"
+
+    entry = @zipfile.find_entry(to_name)
+
+    if entry
       @zipfile.replace to_name, from_name
+    else
+      @zipfile.add to_name, from_name
     end
+
+    # begin
+    #   @zipfile.add to_name, from_name
+    # rescue Zip::ZipEntryExistsError
+    #   @zipfile.replace to_name, from_name
+    # end
   end
 
   def add_file name, to_dir = nil
@@ -89,9 +99,9 @@ class ZipWriter
         if @new_file
           add_file file_name, dir
         else
-          to_name = "#{dir}/#{file_name[full_name(dir).size+1..-1]}"
+          to_name = "#{file_name[full_name(dir).size-11..-1]}"
 
-          add_or_replace_file file_name, to_name
+          add_or_replace_file file_name, dir, to_name
         end
       end
     end

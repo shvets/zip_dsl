@@ -227,8 +227,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="RVM: ruby-2.2.0 [zip_dsl]" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.9, RVM: ruby-2.2.0 [zip_dsl]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.11, RVM: ruby-2.2.0 [zip_dsl]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.2.5, RVM: ruby-2.2.0 [zip_dsl]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="file_utils (v1.1.2, RVM: ruby-2.2.0 [zip_dsl]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gemcutter (v0.7.1, RVM: ruby-2.2.0 [zip_dsl]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gemspec_deps_gen (v1.1.2, RVM: ruby-2.2.0 [zip_dsl]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="meta_methods (v1.3.0, RVM: ruby-2.2.0 [zip_dsl]) [gem]" level="application" />
